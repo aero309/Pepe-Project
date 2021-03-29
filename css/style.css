@@ -1,0 +1,12 @@
+/* Couleur du fond */
+body {
+    background-color: #389E62;
+}
+
+/* Titre */
+#perso {
+    font-family: Impact;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
