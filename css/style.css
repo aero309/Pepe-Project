@@ -1,9 +1,9 @@
-/* Couleur du fond test*/
+/* Couleur du fond*/
 body {
   background-color: #389e62;
 }
 
-/* Titre test*/
+/* Titre*/
 #perso {
   font-family: Impact;
   color: white;
@@ -12,6 +12,8 @@ body {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
 }
+
+/* Animation*/
 
 @keyframes fadeIn {
   0% {
