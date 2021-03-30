@@ -1,12 +1,59 @@
 /* Couleur du fond */
 body {
-    background-color: #389E62;
+  background-color: #389e62;
 }
 
 /* Titre test*/
 #perso {
-    font-family: Impact;
-    color: white;
-    text-align: center;
-    font-size: 50px;
+  font-family: Impact;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
