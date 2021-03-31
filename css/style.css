@@ -1,10 +1,12 @@
 /* Couleur du fond*/
+
 body {
   background-color: #389e62;
 }
 
-/* Titre*/
-#perso {
+/* Instruction*/
+
+#choixperso {
   font-family: Impact;
   color: white;
   text-align: center;
@@ -13,41 +15,22 @@ body {
   -webkit-animation: fadeIn ease 2s;
 }
 
-/* Bouton pepe*/
+/* Choix des personnages*/
 
-.button {
-  cursor: pointer;
+#perso {
+  display: block;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.peperage {
+  width: 15%;
+  height: 15%;
   background-color: red;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  margin: 0px auto;
 }
 
-.button-clickable:hover {
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
-}
-
-.button-clickable:active {
-  box-shadow: none;
-}
-
-.bla {
-  width: 20%;
-  height: 20%
-  color: blue;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 15px;
-}
-
-.bla:hover {
-  animation-name: shake;
-  animation-duration: 0.1s;
-  transform-origin: 50% 50%;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.button{
+  box-shadow  4px 4px rgba(0, 0, 0, 0.7):
 }
 
 /* Animation*/
@@ -67,41 +50,5 @@ body {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(2px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(0px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(2px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
