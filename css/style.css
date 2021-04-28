@@ -11,6 +11,7 @@ body#PagePerso {
   background: url(img-css/background.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   font-size: 35px;
 }
 
@@ -74,6 +75,19 @@ body#PagePerso {
 
 .poggers:hover {
   animation: pog 0.01s infinite;
+}
+
+/* Bouton start*/
+.start-button {
+  max-width: 50%;
+  max-height: 50%;
+}
+#start-button {
+  margin: auto;
+  text-align: center;
+}
+.start-button:hover {
+  animation: size-increase infinite;
 }
 
 /* Animations*/
