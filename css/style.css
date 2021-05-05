@@ -90,13 +90,6 @@ body#PagePerso {
 
 /* Jeu*/
 
-#game-space {
-  border-style: solid;
-  height: 800px;
-  width: 1200px;
-  margin: auto;
-}
-
 /* Animations*/
 
 @keyframes fadeIn {
