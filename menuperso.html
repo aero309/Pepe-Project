@@ -5,7 +5,6 @@
     <meta name="author" content="aero309-Lizzo" />
     <link rel="stylesheet" href="css\style.css" />
     <title>Pepe Mining Simulator</title>
-    <script src="jeu.js"></script>
   </head>
   <audio src="audio\bgsound.mp3" autoplay loop></audio>
 
@@ -13,20 +12,13 @@
     <div id="choixperso">Choisissez votre Pepe</div>
     <div id="peperage">
       <p>Pepe Rage</p>
-      <img src="img\PepeRage.jpg" class="peperage" onclick="Rage()"></img>
+    <img src="img\PepeRage.jpg" class="peperage" onclick="Rage(); affichejeu();">
     </div>
     <div id="poggers">
       <p>Poggers</p>
-      <img src="img\poggers.png" class="poggers" onclick="Poggers()"></img>
+      <img src="img\poggers.png" class="poggers" onclick="Poggers()">
     </div>
     <a href="jeu.html">Jeu</a>
-    <script>
-      function Rage(){
-        var perso = "img\PepeRage.jpg"
-      }
-      function Poggers(){
-        var perso = "img\poggers.png"
-      }
-    </script>
+    <script src="js\jeu.js"></script>
   </body>
 </html>

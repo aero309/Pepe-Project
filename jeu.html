@@ -6,15 +6,20 @@
     <link rel="stylesheet" href="css\style.css" />
   </head>
   <body>
-    <div>
-      <canvas
-        id="game-space"
-        width="1200"
-        height="800"
-        style="border: 1px solid #d3d3d3;"
-      >
-      </canvas>
-      <script src="js/jeu.js"></script>
+    <div id="game-space">
+      <div id="bar">
+        <div id="game-title">
+          Pepe Mining Simulator
+        </div>
+        <img src="img\pepecoin.png" style="width: 80px; height: 45px; float: left; margin-left: 600px;">
+        <div id="balance">
+        </div>
+      </div>
+      <div id="main-button" onclick="ajout(1)">
+      </div>
+      <div id="upgrade">
+      </div>
     </div>
+    <script src="js\jeu.js"></script>
   </body>
 </html>

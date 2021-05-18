@@ -5,6 +5,7 @@ body {
   font-family: Impact;
   color: white;
   animation: fadeIn ease 2s;
+  user-select:none;
 }
 
 body#PagePerso {
@@ -88,7 +89,44 @@ body#PagePerso {
   text-align: center;
 }
 
-/* Jeu*/
+/*Espace de jeu*/
+
+#game-space {
+  margin: auto;
+  border-style: solid;
+  border-color: green;
+  width: 1200px;
+  height: 800px;
+}
+
+#bar {
+  margin: auto;
+  background-color: #F1F648;
+  width: 1200x;
+  height: 50px;
+}
+
+#game-title {
+  font-size: 40px;
+  max-width: 600px;
+  text-transform: uppercase;
+  text-shadow:2px 2px #000;
+  float:left;
+}
+
+#main-button {
+  position: relative;
+  left: 350px;
+  top: 300px;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+#balance {
+  font-size: 40px;
+  text-shadow:2px 2px #000;
+}
 
 /* Animations*/
 
