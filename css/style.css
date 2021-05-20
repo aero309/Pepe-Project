@@ -121,9 +121,7 @@ body#PagePerso {
   position: absolute;
   left: 350px;
   top: 300px;
-  max-width: 100px;
-  width: 100px;
-  height: 100px;
+  max-width: 400px;
 }
 
 #balance {
@@ -147,27 +145,33 @@ body#PagePerso {
 }
 
 #pickaxe img {
+  position: absolute;
   width: 100px;
   height: 100px;
   transform-origin: 100% 100%;
 }
 
-#upgrade {
-  position: absolute;
-  top: 0px;
-  left: 700px;
-}
 
-#upgrade img{
-  width: 500px;
-  height: 300px;
+#upgrade{
+  position: absolute;
+  max-width: 350px;
+  max-height: 100px;
+  top: 75px;
+  right: 100px;
 }
 
 #price_clicks {
   position: absolute;
   font-size: 20px;
-  top: 105px;
-  right: 20px;
+  top: 95px;
+  right: 15px;
+}
+
+#price_auto{
+  position: absolute;
+  font-size: 20px;
+  top: 190px;
+  right: 15px;
 }
 
 /* Animations*/
