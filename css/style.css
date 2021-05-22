@@ -166,7 +166,9 @@ body#PagePerso {
   max-width: 350px;
   max-height: 100px;
   top: 75px;
-  right: 100px;
+  right: 120px;
+  border-radius: 15px;
+  box-shadow: 0 9px #8B8000;
 }
 
 #upgrade2 {
@@ -174,7 +176,19 @@ body#PagePerso {
   max-width: 350px;
   max-height: 100px;
   top: 175px;
-  right: 100px;
+  right: 120px;
+  border-radius: 15px;
+  box-shadow: 0 9px #8B8000;
+}
+
+#upgrade1:active {
+  box-shadow: 0 5px #8B8000;
+  transform: translateY(4px);
+}
+
+#upgrade2:active {
+  box-shadow: 0 5px #8B8000;
+  transform: translateY(4px);
 }
 
 #price_clicks {
