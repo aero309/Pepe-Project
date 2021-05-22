@@ -1,8 +1,4 @@
 //////////////////////////////////////
-/*Animation*/
-//////////////////////////////////////
-
-//////////////////////////////////////
 /*Jeu*/
 //////////////////////////////////////
 
@@ -36,16 +32,19 @@ document.getElementById("price_clicks").innerHTML =
 // Initialiser la fonction qui effectue l'achat
 function increase_click() {
   if (balance >= price_clicks) {
-    balance -= price_clicks;
-    document.getElementById("balance").innerHTML = balance;
-    ini_click += 1;
-    document.getElementById("main-button").onclick = function () {
-      ajout(ini_click);
-    };
-    price_clicks *= 2;
-    document.getElementById("price_clicks").innerHTML =
-      "Price:" + " " + price_clicks;
-  } else {
+    if (ini_click <= 15){
+      balance -= price_clicks;
+      document.getElementById("balance").innerHTML = balance;
+      ini_click += 1;
+      document.getElementById("main-button").onclick = function () {
+      ajout(ini_click);}
+      price_clicks *= 2;
+      document.getElementById("price_clicks").innerHTML = "Price:" + " " + price_clicks;
+      } else {
+        alert("Vous avez obtenu le plus grand nombre de coins par clique!");
+        document.getElementById("price_clicks").innerHTML = "Price:" + " " + "N/A";
+      }
+    } else {
     alert("Il vous faut au moins" + " " + price_clicks + " " + "Pepe Coins");
   }
 }
@@ -67,10 +66,10 @@ function upgrade_auto() {
       ini_auto -= 100;
       setInterval(autoclick, ini_auto);
       price_auto *= 2;
-      document.getElementById("price_auto").innerHTML =
-        "Price:" + " " + price_auto;
+      document.getElementById("price_auto").innerHTML = "Price:" + " " + price_auto;
     } else {
       alert("Vous avez atteint l'auto-clique le plus rapide du jeu!");
+      document.getElementById("price_clicks").innerHTML = "Price:" + " " + "N/A";
     }
   } else {
     alert("Il vous faut au moins" + " " + price_auto + " " + "Pepe Coins");
