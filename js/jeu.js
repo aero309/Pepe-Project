@@ -52,24 +52,32 @@ function increase_click() {
 var price_auto = 200;
 var ini_auto = 1000;
 
-document.getElementById("price_auto").innerHTML = "Price:" + " " + price_auto;
+document.getElementById("price_auto").innerHTML = "Prix:" + " " + price_auto;
+
 
 function autoclick() {
   document.getElementById("main-button").click();
 }
 
+
 function upgrade_auto() {
   if (balance >= price_auto) {
-    if (ini_auto >= 300) {
+    if (ini_auto >= 400) {
       balance -= price_auto;
       document.getElementById("balance").innerHTML = balance;
       ini_auto -= 100;
       setInterval(autoclick, ini_auto);
       price_auto *= 2;
-      document.getElementById("price_auto").innerHTML = "Price:" + " " + price_auto;
+      document.getElementById("price_auto").innerHTML = "Prix:" + " " + price_auto;
+      console.log(ini_auto)
     } else {
-      alert("Vous avez atteint l'auto-clique le plus rapide du jeu!");
-      document.getElementById("price_clicks").innerHTML = "Price:" + " " + "N/A";
+      if (ini_auto === 400){
+        ini_auto -= 100;
+        document.getElementById("price_auto").innerHTML = "Rupture de stock!";
+        alert("Vous avez atteint l'auto-clique le plus rapide du jeu!");
+      } else {
+        alert("Vous avez atteint l'auto-clique le plus rapide du jeu!");
+      }
     }
   } else {
     alert("Il vous faut au moins" + " " + price_auto + " " + "Pepe Coins");
