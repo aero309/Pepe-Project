@@ -126,7 +126,7 @@ body#PagePerso {
   left: 250px;
   top: 270px;
   max-width: 400px;
-  max-height: 500px
+  max-height: 500px;
 }
 
 #balance {
@@ -138,6 +138,7 @@ body#PagePerso {
 
 #button_rage {
   position: absolute;
+  left: 20px;
   width: 200px;
   height: 200px;
   transform: scaleX(-1);
@@ -145,6 +146,8 @@ body#PagePerso {
 
 #button_pog {
   position: absolute;
+  top: 25px;
+  left: 20px;
   width: 200px;
   height: 200px;
 }
@@ -158,7 +161,7 @@ body#PagePerso {
 }
 
 #rock {
-  position:absolute;
+  position: absolute;
   top: 100px;
   left: -200px;
 }
@@ -171,7 +174,8 @@ body#PagePerso {
   animation: bounce 0.1s;
 }
 
-#upgrade1, #upgrade2{
+#upgrade1,
+#upgrade2 {
   position: absolute;
   max-width: 350px;
   max-height: 100px;
@@ -181,53 +185,66 @@ body#PagePerso {
   top: 75px;
   right: 120px;
   border-radius: 15px;
-  box-shadow: 0 9px #8B8000;
+  box-shadow: 0 9px #8b8000;
 }
 
 #upgrade2 {
   top: 175px;
   right: 120px;
   border-radius: 15px;
-  box-shadow: 0 9px #8B8000;
+  box-shadow: 0 9px #8b8000;
 }
 
-#partyhat, #santahat, #witchhat, #glasses{
+#classicalhat,
+#partyhat,
+#santahat,
+#witchhat,
+#glasses {
   position: absolute;
   max-width: 100px;
 }
 
-
-#partyhat{
+#classicalhat {
+  top: 380px;
+  right: 350px;
+}
+#partyhat {
   top: 350px;
-  right: 240px;
+  right: 130px;
 }
 
-#santahat{
+#santahat {
   top: 550px;
   right: 350px;
 }
 
-#witchhat{
+#witchhat {
   top: 550px;
   right: 150px;
 }
 
-#glasses{
+#glasses {
   top: 720px;
   right: 250px;
 }
 
 #upgrade1:active {
-  box-shadow: 0 5px #8B8000;
+  box-shadow: 0 5px #8b8000;
   transform: translateY(4px);
 }
 
 #upgrade2:active {
-  box-shadow: 0 5px #8B8000;
+  box-shadow: 0 5px #8b8000;
   transform: translateY(4px);
 }
 
-#price_clicks, #price_auto, #price_ch, #price_ph, #price_sh, #price_wh, #price_g{
+#price_clicks,
+#price_auto,
+#price_ch,
+#price_ph,
+#price_sh,
+#price_wh,
+#price_g {
   position: absolute;
   margin: auto;
   font-size: 20px;
@@ -245,17 +262,22 @@ body#PagePerso {
   right: 15px;
 }
 
-#price_ph {
+#price_ch {
   top: 450px;
-  right: 260px;
+  right: 360px;
 }
 
-#price_sh{
+#price_ph {
+  top: 450px;
+  right: 150px;
+}
+
+#price_sh {
   top: 640px;
   right: 360px;
 }
 
-#price_wh{
+#price_wh {
   top: 640px;
   right: 150px;
 }
@@ -267,21 +289,21 @@ body#PagePerso {
 
 #hat {
   position: absolute;
-  top: 110px;
-  left: 240px;
+  bottom: 460px;
+  left: 260px;
 }
 
-#hat img{
-  max-width:250px;
+#hat img {
+  max-width: 250px;
 }
 
 #glasses_wear {
   position: absolute;
-  top: 310px;
-  left: 230px
+  top: 330px;
+  left: 250px;
 }
 
-#glasses_wear img{
+#glasses_wear img {
   max-width: 250px;
 }
 
@@ -346,11 +368,11 @@ body#PagePerso {
 }
 
 @keyframes bounce {
-  0%, 100%{
+  0%,
+  100% {
     top: 100px;
-  
   }
-  50%{
+  50% {
     top: 120px;
   }
 }
