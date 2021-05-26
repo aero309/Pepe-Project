@@ -15,6 +15,7 @@ body#PagePerso {
   font-size: 35px;
 }
 
+
 /* Titre*/
 
 .titre {
@@ -121,6 +122,12 @@ body#PagePerso {
   float: left;
 }
 
+#pepecoin {
+  position: absolute;
+  top: 5px;
+  right: 250px;
+}
+
 #main-button {
   position: absolute;
   left: 250px;
@@ -183,14 +190,14 @@ body#PagePerso {
 
 #upgrade1 {
   top: 75px;
-  right: 120px;
+  right: 150px;
   border-radius: 15px;
   box-shadow: 0 9px #8b8000;
 }
 
 #upgrade2 {
   top: 175px;
-  right: 120px;
+  right: 150px;
   border-radius: 15px;
   box-shadow: 0 9px #8b8000;
 }
@@ -209,7 +216,7 @@ body#PagePerso {
   right: 350px;
 }
 #partyhat {
-  top: 350px;
+  top: 300px;
   right: 130px;
 }
 
@@ -263,7 +270,7 @@ body#PagePerso {
 }
 
 #price_ch {
-  top: 450px;
+  top: 460px;
   right: 360px;
 }
 
@@ -290,11 +297,12 @@ body#PagePerso {
 #hat {
   position: absolute;
   bottom: 460px;
-  left: 260px;
+  right: 690px;
 }
 
 #hat img {
   max-width: 250px;
+  max-height: 250px;
 }
 
 #glasses_wear {

@@ -5,13 +5,17 @@
     <meta name="author" content="Raimon-KhanhKy" />
     <link rel="stylesheet" href="css\style.css" />
   </head>
-  <body>
+  <body id="game">
+    <audio id="yolo">
+      <source src="audio/yolo.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     <div id="game-space">
       <div id="bar">
         <div id="game-title">
           Pepe Mining Simulator
         </div>
-        <img
+        <img id = "pepecoin"
           src="img\pepecoin.png"
           style="width: 80px; height: 45px; float: left; margin-left: 600px;"
         />
@@ -19,8 +23,8 @@
       </div>
       <div id="main-button">
         <img id="rock" src="img/rock.png" />
-        <img id="button_pog" src="img/poggers.png" />
         <img id="pickaxe" src="img/pickaxe.png" />
+        <img id="button_pog" src="img/poggers.png" />
       </div>
       <div id="hat"></div>
       <div id="glasses_wear"></div>
